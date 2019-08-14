@@ -1,0 +1,603 @@
+\begin{thebibliography}{100}
+
+\bibitem{aarsearch}
+Scott Aaronson and Andris Ambainis.
+\newblock Quantum search of spatial regions.
+\newblock In {\em 44th Annual IEEE Symposium on Foundations of Computer
+  Science, 2003. Proceedings.}, pages 200--209. IEEE, 2003.
+
+\bibitem{aarquan}
+Scott Aaronson and Yaoyun Shi.
+\newblock Quantum lower bounds for the collision and the element distinctness
+  problems.
+\newblock {\em Journal of the ACM (JACM)}, 51(4):595--605, 2004.
+
+\bibitem{aharfault}
+Dorit Aharonov and Michael Ben-Or.
+\newblock Fault-tolerant quantum computation with constant error rate.
+\newblock {\em arXiv preprint quant-ph/9906129}, 1999.
+
+\bibitem{ambacomm}
+Andris Ambainis.
+\newblock Communication complexity in a 3-computer model.
+\newblock {\em Algorithmica}, 16(3):298--301, 1996.
+
+\bibitem{amba2quan}
+Andris Ambainis.
+\newblock Quantum lower bounds by quantum arguments.
+\newblock {\em Journal of Computer and System Sciences}, 64(4):750--767, 2002.
+
+\bibitem{ambapoly}
+Andris Ambainis.
+\newblock Polynomial degree vs. quantum query complexity.
+\newblock {\em Journal of Computer and System Sciences}, 72(2):220--238, 2006.
+
+\bibitem{amba7quan}
+Andris Ambainis.
+\newblock Quantum walk algorithm for element distinctness.
+\newblock {\em SIAM Journal on Computing}, 37(1):210--239, 2007.
+
+\bibitem{aravind}
+PK~Aravind.
+\newblock A simple demonstration of bell's theorem involving two observers and
+  no probabilities or inequalities.
+\newblock {\em arXiv preprint quant-ph/0206070}, 2002.
+
+\bibitem{aspectl}
+Alain Aspect, Philippe Grangier, and G{\'e}rard Roger.
+\newblock Experimental tests of realistic local theories via bell's theorem.
+\newblock {\em Physical review letters}, 47(7):460, 1981.
+
+\bibitem{babaigraph}
+L{\'a}szl{\'o} Babai.
+\newblock Graph isomorphism in quasipolynomial time.
+\newblock In {\em Proceedings of the forty-eighth annual ACM symposium on
+  Theory of Computing}, pages 684--697. ACM, 2016.
+
+\bibitem{babaican}
+L{\'a}szl{\'o} Babai and Eugene~M Luks.
+\newblock Canonical labeling of graphs.
+\newblock In {\em Proceedings of the fifteenth annual ACM symposium on Theory
+  of computing}, pages 171--183. ACM, 1983.
+
+\bibitem{bar}
+Ziv Bar-Yossef, Thathachar~S Jayram, and Iordanis Kerenidis.
+\newblock Exponential separation of quantum and classical one-way communication
+  complexity.
+\newblock In {\em Proceedings of the thirty-sixth annual ACM symposium on
+  Theory of computing}, pages 128--137. ACM, 2004.
+
+\bibitem{bealsqcomp}
+Robert Beals.
+\newblock Quantum computation of fourier transforms over symmetric groups.
+\newblock In {\em Proceedings of the twenty-ninth annual ACM symposium on
+  Theory of computing}, pages 48--53. Citeseer, 1997.
+
+\bibitem{bealsqlow}
+Robert Beals, Harry Buhrman, Richard Cleve, Michele Mosca, and Ronald De~Wolf.
+\newblock Quantum lower bounds by polynomials.
+\newblock {\em Journal of the ACM (JACM)}, 48(4):778--797, 2001.
+
+\bibitem{bell}
+John~S Bell.
+\newblock On the einstein podolsky rosen paradox.
+\newblock {\em Physics Physique Fizika}, 1(3):195, 1964.
+
+\bibitem{belovs}
+Aleksandrs Belovs.
+\newblock Span programs for functions with constant-sized 1-certificates.
+\newblock In {\em Proceedings of the forty-fourth annual ACM symposium on
+  Theory of computing}, pages 77--84. ACM, 2012.
+
+\bibitem{benioff}
+Paul Benioff.
+\newblock Quantum mechanical hamiltonian models of turing machines.
+\newblock {\em Journal of Statistical Physics}, 29(3):515--546, 1982.
+
+\bibitem{benquan}
+Charles~H Bennett and Gilles Brassard.
+\newblock Quantum cryptography: public key distribution and coin tossing.
+\newblock {\em Theor. Comput. Sci.}, 560(12):7--11, 2014.
+
+\bibitem{bentel}
+Charles~H Bennett, Gilles Brassard, Claude Cr{\'e}peau, Richard Jozsa, Asher
+  Peres, and William~K Wootters.
+\newblock Teleporting an unknown quantum state via dual classical and
+  einstein-podolsky-rosen channels.
+\newblock {\em Physical review letters}, 70(13):1895, 1993.
+
+\bibitem{bencomm}
+Charles~H Bennett and Stephen~J Wiesner.
+\newblock Communication via one-and two-particle operators on
+  einstein-podolsky-rosen states.
+\newblock {\em Physical review letters}, 69(20):2881, 1992.
+
+\bibitem{bernstein}
+Ethan Bernstein and Umesh Vazirani.
+\newblock Quantum complexity theory.
+\newblock {\em SIAM Journal on computing}, 26(5):1411--1473, 1997.
+
+\bibitem{biasse}
+Jean-Fran{\c{c}}ois Biasse and Fang Song.
+\newblock Efficient quantum algorithms for computing class groups and solving
+  the principal ideal problem in arbitrary degree number fields.
+\newblock In {\em Proceedings of the twenty-seventh annual ACM-SIAM symposium
+  on Discrete algorithms}, pages 893--902. Society for Industrial and Applied
+  Mathematics, 2016.
+
+\bibitem{boas}
+P~Van~Emde Boas.
+\newblock Machine models and simulations.
+\newblock {\em Handbook of Theoretical Computer Science, volume A}, pages
+  1--66, 2014.
+
+\bibitem{boyer}
+Michel Boyer, Gilles Brassard, Peter H{\o}yer, and Alain Tapp.
+\newblock Tight bounds on quantum searching.
+\newblock {\em Fortschritte der Physik: Progress of Physics}, 46(4-5):493--505,
+  1998.
+
+\bibitem{brassardcost}
+Gilles Brassard, Richard Cleve, and Alain Tapp.
+\newblock Cost of exactly simulating quantum entanglement with classical
+  communication.
+\newblock {\em Physical Review Letters}, 83(9):1874, 1999.
+
+\bibitem{brassardquan}
+Gilles Brassard, Peter Hoyer, and Alain Tapp.
+\newblock Quantum algorithm for the collision problem.
+\newblock {\em arXiv preprint quant-ph/9705002}, 1997.
+
+\bibitem{buhrmanloc}
+Harry Buhrman, Richard Cleve, Serge Massar, and Ronald De~Wolf.
+\newblock Nonlocality and communication complexity.
+\newblock {\em Reviews of modern physics}, 82(1):665, 2010.
+
+\bibitem{buhrmanfinger}
+Harry Buhrman, Richard Cleve, John Watrous, and Ronald De~Wolf.
+\newblock Quantum fingerprinting.
+\newblock {\em Physical Review Letters}, 87(16):167902, 2001.
+
+\bibitem{buhrmanquantum}
+Harry Buhrman, Richard Cleve, and Avi Wigderson.
+\newblock Quantum vs. classical communication and computation.
+\newblock {\em arXiv preprint quant-ph/9802040}, 1998.
+
+\bibitem{buhrmanverif}
+Harry Buhrman and Robert {\v{S}}palek.
+\newblock Quantum verification of matrix products.
+\newblock In {\em Proceedings of the seventeenth annual ACM-SIAM symposium on
+  Discrete algorithm}, pages 880--889. Society for Industrial and Applied
+  Mathematics, 2006.
+
+\bibitem{bun}
+Mark Bun and Justin Thaler.
+\newblock Dual lower bounds for approximate degree and markov--bernstein
+  inequalities.
+\newblock {\em Information and Computation}, 243:2--25, 2015.
+
+\bibitem{childs}
+Andrew~M Childs.
+\newblock Lecture notes on quantum algorithms.
+\newblock {\em Lecture notes at University of Maryland}, 2017.
+
+\bibitem{cirel}
+Boris~S Cirel'son.
+\newblock Quantum generalizations of bell's inequality.
+\newblock {\em Letters in Mathematical Physics}, 4(2):93--100, 1980.
+
+\bibitem{clauser}
+John~F Clauser, Michael~A Horne, Abner Shimony, and Richard~A Holt.
+\newblock Proposed experiment to test local hidden-variable theories.
+\newblock {\em Physical review letters}, 23(15):880, 1969.
+
+\bibitem{clevequery}
+Richard Cleve.
+\newblock The query complexity of order-finding.
+\newblock In {\em Proceedings 15th Annual IEEE Conference on Computational
+  Complexity}, pages 54--59. IEEE, 2000.
+
+\bibitem{clevesubst}
+Richard Cleve and Harry Buhrman.
+\newblock Substituting quantum entanglement for communication.
+\newblock {\em Physical Review A}, 56(2):1201, 1997.
+
+\bibitem{clevequan}
+Richard Cleve, Artur Ekert, Chiara Macchiavello, and Michele Mosca.
+\newblock Quantum algorithms revisited.
+\newblock {\em Proceedings of the Royal Society of London. Series A:
+  Mathematical, Physical and Engineering Sciences}, 454(1969):339--354, 1998.
+
+\bibitem{cleveentan}
+Richard Cleve, Wim Van~Dam, Michael Nielsen, and Alain Tapp.
+\newblock Quantum entanglement and the communication complexity of the inner
+  product function.
+\newblock In {\em Quantum Computing and Quantum Communications}, pages 61--74.
+  Springer, 1999.
+
+\bibitem{Wol+01}
+Ronald de~Wolf.
+\newblock {\em Quantum Computing and Communication Complexity}.
+\newblock PhD thesis, 2001.
+
+\bibitem{deutschrapid}
+D~Deutsch.
+\newblock Rapid solution of problems by quantum computation.
+\newblock {\em Proceedings of the Royal Society A}, 435:563--574, 1991.
+
+\bibitem{deutschtheory}
+David Deutsch.
+\newblock Quantum theory, the church--turing principle and the universal
+  quantum computer.
+\newblock {\em Proceedings of the Royal Society of London. A. Mathematical and
+  Physical Sciences}, 400(1818):97--117, 1985.
+
+\bibitem{deutschnet}
+David~Elieser Deutsch.
+\newblock Quantum computational networks.
+\newblock {\em Proceedings of the Royal Society of London. A. Mathematical and
+  Physical Sciences}, 425(1868):73--90, 1989.
+
+\bibitem{drucker}
+Andrew Drucker and Ronald de~Wolf.
+\newblock Quantum proofs for classical theorems.
+\newblock {\em arXiv preprint arXiv:0910.3376}, 2009.
+
+\bibitem{durr}
+Christoph Durr and Peter H{\o}yer.
+\newblock A quantum algorithm for finding the minimum.
+\newblock {\em arXiv preprint quant-ph/9607014}, 1996.
+
+\bibitem{einstein}
+Albert Einstein, Boris Podolsky, and Nathan Rosen.
+\newblock Can quantum-mechanical description of physical reality be considered
+  complete?
+\newblock {\em Physical review}, 47(10):777, 1935.
+
+\bibitem{ettinger}
+Mark Ettinger, Peter H{\o}yer, and Emanuel Knill.
+\newblock The quantum query complexity of the hidden subgroup problem is
+  polynomial.
+\newblock {\em Information Processing Letters}, 91(1):43--48, 2004.
+
+\bibitem{fortnow}
+Lance Fortnow and John Rogers.
+\newblock Complexity limitations on quantum computation.
+\newblock {\em Journal of Computer and System Sciences}, 59(2):240--252, 1999.
+
+\bibitem{frankl}
+Peter Frankl and Vojt{\v{e}}ch R{\"o}dl.
+\newblock Forbidden intersections.
+\newblock {\em Transactions of the American Mathematical Society},
+  300(1):259--286, 1987.
+
+\bibitem{freivalds}
+Rusins Freivalds.
+\newblock Probabilistic machines can use less running time.
+\newblock In {\em IFIP congress}, volume 839, page 842, 1977.
+
+\bibitem{furer}
+Martin F{\"u}rer.
+\newblock Faster integer multiplication.
+\newblock {\em SIAM Journal on Computing}, 39(3):979--1005, 2009.
+
+\bibitem{gottesman}
+Daniel Gottesman.
+\newblock An introduction to quantum error correction and fault-tolerant
+  quantum computation.
+\newblock In {\em Quantum information science and its contributions to
+  mathematics, Proceedings of Symposia in Applied Mathematics}, volume~68,
+  pages 13--58, 2010.
+
+\bibitem{grigni}
+Michelangelo Grigni, Leonard~J Schulman, Monica Vazirani, and Vazirani S.
+\newblock Quantum mechanical algorithms for the nonabelian hidden subgroup
+  problem.
+
+\bibitem{grover}
+Lov~K Grover.
+\newblock A fast quantum mechanical algorithm for database search.
+\newblock {\em arXiv preprint quant-ph/9605043}, 1996.
+
+\bibitem{hales}
+Lisa Hales and Sean Hallgren.
+\newblock An improved quantum fourier transform algorithm and applications.
+\newblock In {\em Proceedings 41st Annual Symposium on Foundations of Computer
+  Science}, pages 515--525. IEEE, 2000.
+
+\bibitem{hallgren}
+Sean Hallgren.
+\newblock Polynomial-time quantum algorithms for pell's equation and the
+  principal ideal problem.
+\newblock {\em Journal of the ACM (JACM)}, 54(1):4, 2007.
+
+\bibitem{Hal+03}
+Sean Hallgren, Alexander Russell, and Amon Ta-Shma.
+\newblock The hidden subgroup problem and quantum computation using group
+  representations.
+\newblock {\em SIAM Journal on Computin}, 32(4):916--934, 2003.
+\newblock Earlier version in STOC'00.
+
+\bibitem{Har79}
+G.~H. Hardy and E.~M. Wrigh.
+\newblock {\em An Introduction to the Theory of Numbers.}
+\newblock Oxford University Press, New York, fifth edition, 1979.
+
+\bibitem{Hen+15}
+B.~Hensen, H.~Bernien, A.~E. Dr\'eau, A.~Reiserer, N.~Kalb, M.~S. Blok,
+  J.~Ruitenberg, R.~F.~L. Vermeulen, R.~N. Schouten, C.~Abell\'an, W.~Amaya,
+  V.~Pruneri, M.~W. Mitchell, M.~Markham, D.~J. Twitchen, D.~Elkouss,
+  S.~Wehner, T.~H. Taminiau, and R.~Hanson.
+\newblock Experimental loophole-free violation of a bell inequality using
+  entangled electron spins separated by 1.3 km.
+\newblock {\em Nature}, 526, 29 October 2015.
+
+\bibitem{Hol73}
+A.~S. Holevo.
+\newblock Bounds for the quantity of information transmitted by a quantum
+  communication channel.
+\newblock {\em Problemy Peredachi Informatsii}, 9(3):3--11, 1973.
+\newblock English translation in \textit{Problems of Information Transmission},
+  9:177-183, 1973.
+
+\bibitem{Hoy+07}
+Peter H{\o}yer, Troy Lee, and Robert \v{S}palek.
+\newblock Negative weights make adversaries stronger.
+\newblock In {\em Proceedings of 39th ACM STOC}, pages 526--535, 2007.
+
+\bibitem{Hoy+05}
+Peter H{\o}yer and Robert \v{S}palek.
+\newblock Lower bounds on quantum query complexity.
+\newblock {\em Bulletin of the EATCS}, 87:78--108, October 2005.
+
+\bibitem{Iva+12}
+G\'abor Ivanyos, Luc Sanselme, and Miklos Santha.
+\newblock An effcient quantum algorithm for the hidden subgroup problem in
+  nil-2 groups.
+\newblock {\em Algorithmica}, 62(1--2):480--492, 2012.
+
+\bibitem{Jef+13}
+Stacey Jeffery, Robin Kothari, and Frederic Magniez.
+\newblock Nested quantum walks with quantum data structures.
+\newblock In {\em Proceedings of 24th ACM-SIAM SODA}, pages 1474--1485, 2013.
+
+\bibitem{Kat+00}
+Jonathan Katz and Luca Trevisan.
+\newblock On the effciency of local decoding procedures for error-correcting
+  codes.
+\newblock In {\em Proceedings of 32nd ACM STOC}, pages 80--86, 2000.
+
+\bibitem{Ker+04}
+Iordanis Kerenidis and Ronald de~Wolf.
+\newblock Exponential lower bound for 2-query locally decodable codes via a
+  quantum argument.
+\newblock {\em Journal of Computer and System Sciences}, 69(3):395--420, 2004.
+\newblock Earlier version in STOC'03.
+
+\bibitem{Kit95}
+A.~Yu. Kitaev.
+\newblock Quantum measurements and the abelian stabilizer problem, 12 November
+  1995.
+
+\bibitem{Kla+11}
+Boaz Klartag and Oded Regev.
+\newblock Quantum one-way communication is exponentially stronger than
+  classical communication.
+\newblock {\em Proceedings of 43rd ACM STOC}, 2011.
+
+\bibitem{Kni96}
+Emanuel Knill, Raymond Laflamme, and Wojciech Zurek.
+\newblock Threshold accuracy for quantum computation, 15 October 1996.
+
+\bibitem{Knu97}
+Donald~E. Knuth.
+\newblock {\em The Art of Computer Programming. Volume 2: Seminumerical
+  Algorithms}.
+\newblock Addison-Wesley, third edition, 1997.
+
+\bibitem{Gal+14}
+Francois Le~Gall.
+\newblock Improved quantum algorithm for triangle finding via combinatorial
+  arguments.
+\newblock In {\em Proceedings of 55th IEEE FOCS}, pages 216--225, 2014.
+
+\bibitem{Lee+17}
+Troy Lee, Frederic Magniez, and Miklos Santha.
+\newblock Improved quantum query algorithms for triangle finding and
+  associativity testing.
+\newblock {\em Algorithmica}, 77(2):459--486, 2017.
+
+\bibitem{Len93}
+Arjen~K. Lenstra and Hendrik W.~Jr. Lenstra.
+\newblock {\em The Development of the Number Field Sieve}, volume 1554 of {\em
+  Lecture Notes in Mathematics}.
+\newblock Springer, 1993.
+
+\bibitem{Len92}
+Hendrik W.~Jr. Lenstra and Carl Pomerance.
+\newblock A rigorous time bound for factoring integers.
+\newblock {\em Journal of the American Mathematical Society}, 5:483--516, 1992.
+
+\bibitem{Lo98}
+Hoi-Kwong Lo and H.~F. Chau.
+\newblock Unconditional security of quantum key distribution over arbitrarily
+  long distances, 3 March 1998.
+
+\bibitem{Mag+05}
+Frederic Magniez, Miklos Santha, and Mario Szegedy.
+\newblock Quantum algorithms for the triangle problem.
+\newblock In {\em Proceedings of 16th ACM-SIAM SODA}, pages 1109--1117, 2005.
+
+\bibitem{Man80}
+Yuri Manin.
+\newblock {\em Vychislimoe i nevychislimoe (computable and noncomputable).}
+\newblock Soviet Radio, 1980.
+\newblock In Russian.
+
+\bibitem{Man99}
+Yuri Manin.
+\newblock Classical computing, quantum computing, and shor's factoring
+  algorithm, 2 March 1999.
+
+\bibitem{May98}
+Dominic Mayers.
+\newblock Unconditional security in quantum cryptography, 10 February 1998.
+
+\bibitem{Moo+06}
+Cristopher Moore, Daniel Rockmore, and Alexander Russell.
+\newblock Generic quantum fourier transforms.
+\newblock {\em ACM Transactions on Algorithms}, 2(4):707--723, 2006.
+
+\bibitem{Moo+08}
+Cristopher Moore, Alexander Russell, and Leonard~J. Schulman.
+\newblock The symmetric group defies strong fourier sampling.
+\newblock {\em SIAM Journal on Computing}, 37(6):1842--1864, 2008.
+\newblock Earlier version in FOCS'05.
+
+\bibitem{Mos98}
+Michele Mosca and Artur Ekert.
+\newblock The hidden subgroup problem and eigenvalue estimation on a quantum
+  computer.
+\newblock In {\em Proceedings of 1st NASA QCQC conference}, volume 1509 of {\em
+  Lecture Notes in Computer Science}, pages 174--188. Springer, 1998.
+
+\bibitem{Nay99}
+Ashwin Nayak.
+\newblock Optimal lower bounds for quantum automata and random access codes.
+\newblock In {\em Proceedings of 40th IEEE FOCS}, pages 369--376, 1999.
+
+\bibitem{New91}
+Ilan Newman.
+\newblock Private vs. common random bits in communication complexity.
+\newblock {\em Information Processing Letters}, 39(2):67--71, 1991.
+
+\bibitem{New96}
+Ilan Newman and Mario Szegedy.
+\newblock Public vs. private coin ips in one round communication games.
+\newblock In {\em Proceedings of 28th ACM STOC}, volume~39, pages 561--570,
+  1996.
+
+\bibitem{Pap94}
+Christos~H. Papadimitriou.
+\newblock {\em Computational Complexity}.
+\newblock Addison-Wesley, 1994.
+
+\bibitem{Raz+03}
+Alexander Razborov.
+\newblock Quantum communication complexity of symmetric predicates.
+\newblock {\em Izvestiya of the Russian Academy of Sciences, mathematics},
+  67(1):159--176, 2003.
+
+\bibitem{Rei+09}
+Ben Reichardt.
+\newblock Span programs and quantum query complexity: The general adversary
+  bound is nearly tight for every boolean functio.
+\newblock In {\em Proceedings of 50th IEEE FOCS}, pages 544--551, 2009.
+
+\bibitem{Riv78}
+R.~Rivest, A.~Shamir, and L.~Adleman.
+\newblock A method for obtaining digital signatures and public key
+  cryptosystems.
+\newblock {\em Communications of the ACM}, 21:120--126, 1978.
+
+\bibitem{Riv90}
+R.~L. Rivest.
+\newblock {\em Cryptography}, pages 717--755.
+\newblock In  \cite{Lee90}, 1990.
+
+\bibitem{San+08}
+Miklos Santha.
+\newblock Quantum walk based search algorithms.
+\newblock In {\em Proceedings of 5th TAMC}, pages 31--46, 2008.
+
+\bibitem{Sch71}
+A.~Sch{\"o}nhage and V.~Strassen.
+\newblock Schnelle multiplikation grosser zahlen.
+\newblock {\em Computing}, 7:281--292, 1971.
+
+\bibitem{Sch99}
+uwe Sch{\"o}ning.
+\newblock A probabilistic algorithm for k-sat and constraint satisfaction
+  problems.
+\newblock In {\em proceedings of 40th IEEE FOCS}, pages 410--414, 1999.
+
+\bibitem{She+13}
+Alexander Sherstov.
+\newblock Approximating the and-or tree.
+\newblock {\em Theory of Computing}, 9(20):653--663, 2013.
+
+\bibitem{Sho95}
+Peter Shor.
+\newblock Scheme for reducing decoherence in quantum memory.
+\newblock {\em Physical Review A}, 52:2493, 1995.
+
+\bibitem{Sho97}
+Peter Shor.
+\newblock Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer.
+\newblock {\em SIAM Journal on Computing}, 26(5):1484--1509, 1997.
+\newblock Earlier version in FOCS'94.
+
+\bibitem{Sim97}
+Daniel Simon.
+\newblock On the power of quantum computation.
+\newblock {\em SIAM Journal on Computing}, 26(5):1474--1483, 1997.
+\newblock Earlier version in FOCS'94.
+
+\bibitem{Ter+15}
+Barbara~M. Terhal.
+\newblock Quantum error correction for quantum memories.
+\newblock {\em Reviews of Modern Physics}, 87:307, 2015.
+
+\bibitem{Tre+04}
+Luca Trevisan.
+\newblock Some applications of coding theory in computational complexity.
+\newblock {\em Quaderni di Matematica}, 13:347--424, 2004.
+
+\bibitem{vandam}
+Wim Van~Dam.
+\newblock Quantum oracle interrogation: Getting all information for almost half
+  the price.
+\newblock In {\em Proceedings 39th Annual Symposium on Foundations of Computer
+  Science (Cat. No. 98CB36280)}, pages 362--367. IEEE, 1998.
+
+\bibitem{Lee90}
+Jan van Leeuwen.
+\newblock {\em Handbook of Theoretical Computer Science. Volume A: Algorithms
+  and Complexity}.
+\newblock MIT Press, Cambridge, MA, 1990.
+
+\bibitem{Van+00}
+Lieven Vandersypen, Matthias Steffen, Gregory Breyta, Constantino Yannoni,
+  Richard Cleve, and Isaac Chuang.
+\newblock Experimental realization of an order-finding algorithm with an nmr
+  quantum computer.
+\newblock {\em Physical Review Letters}, 85(25):5452--545, 2000.
+
+\bibitem{Wat+01}
+John Watrous.
+\newblock Quantum algorithms for solvable groups.
+\newblock In {\em Proceedings of 33rd ACM STOC}, pages 60--67, 2001.
+
+\bibitem{Wat+09}
+John Watrous.
+\newblock Quantum computational complexity.
+\newblock In {\em Encyclopedia of Complexity and System Science}. Springer,
+  2009.
+
+\bibitem{Woo82}
+W.~K. Wootters and W.~H. Zurek.
+\newblock A single quantum cannot be copied.
+\newblock {\em Nature}, 299:802--803, 1982.
+
+\bibitem{Yao79}
+Andrew Chi-Chih Yao.
+\newblock Some complexity questions related to distributive computing.
+\newblock In {\em Proceedings of 11th ACM STOC}, pages 209--213, 1979.
+
+\bibitem{Yao93}
+Andrew Chi-Chih Yao.
+\newblock Quantum circuit complexity.
+\newblock In {\em Proceedings of 34th IEEE FOCS}, pages 352--360, 1993.
+
+\end{thebibliography}

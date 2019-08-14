@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (Web2C 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: kollar.aux
+The style file: plain.bst
+Database file #1: quantumbib.bib.bib
+"," immediately follows a field name---line 1015 of file quantumbib.bib.bib
+ : Umesh
+ :      , journal={Combinatorica},
+I'm skipping whatever remains of this entry
+Warning--empty school in Wol+01
+Warning--empty journal in grigni
+Warning--empty year in grigni
+Warning--can't use both volume and number fields in New96
+Warning--empty volume in Riv90's crossref of Lee90
+Warning--need editor, key, or series for Riv90 to crossref Lee90
+You've used 106 entries,
+            2118 wiz_defined-function locations,
+            1142 strings with 18876 characters,
+and the built_in function-call counts, 35974 in all, are:
+= -- 3662
+> -- 1373
+< -- 35
++ -- 566
+- -- 442
+* -- 2358
+:= -- 5760
+add.period$ -- 333
+call.type$ -- 106
+change.case$ -- 533
+chr.to.int$ -- 0
+cite$ -- 112
+duplicate$ -- 1481
+empty$ -- 2997
+format.name$ -- 442
+if$ -- 7701
+int.to.chr$ -- 0
+int.to.str$ -- 106
+missing$ -- 107
+newline$ -- 534
+num.names$ -- 212
+pop$ -- 558
+preamble$ -- 1
+purify$ -- 433
+quote$ -- 0
+skip$ -- 1103
+stack$ -- 0
+substring$ -- 2507
+swap$ -- 392
+text.length$ -- 35
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 410
+warning$ -- 6
+while$ -- 391
+width$ -- 109
+write$ -- 1169
+(There was 1 error message)

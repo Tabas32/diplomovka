@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: test.aux
+The style file: plain.bst
+Database file #1: Quantum.bib.bib
+Warning--empty school in Wol+01
+Warning--can't use both volume and number fields in New96
+Warning--empty volume in Riv90's crossref of Lee90
+Warning--need editor, key, or series for Riv90 to crossref Lee90
+You've used 52 entries,
+            2118 wiz_defined-function locations,
+            849 strings with 11149 characters,
+and the built_in function-call counts, 17703 in all, are:
+= -- 1781
+> -- 669
+< -- 18
++ -- 279
+- -- 216
+* -- 1126
+:= -- 2800
+add.period$ -- 160
+call.type$ -- 52
+change.case$ -- 257
+chr.to.int$ -- 0
+cite$ -- 56
+duplicate$ -- 735
+empty$ -- 1502
+format.name$ -- 216
+if$ -- 3804
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 54
+newline$ -- 265
+num.names$ -- 104
+pop$ -- 304
+preamble$ -- 1
+purify$ -- 212
+quote$ -- 0
+skip$ -- 564
+stack$ -- 0
+substring$ -- 1242
+swap$ -- 205
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 192
+warning$ -- 4
+while$ -- 189
+width$ -- 54
+write$ -- 572
+(There were 4 warnings)

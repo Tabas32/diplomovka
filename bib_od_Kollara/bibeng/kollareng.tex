@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{article}
+
+%% Begin Slovak Version ---------------------------------------------
+%\usepackage[cp1250]{inputenc}
+%\usepackage{slovak}
+%% End Slovak Version -----------------------------------------------
+
+%\def\ encodingdefault{IL2} 
+
+
+\title{Quantum Bibliography -- English version}
+
+\author{J\'an KOLL\'AR}
+
+\begin{document}
+
+Including citations in the form \verb/\cite{author}/
+
+\input{quantumcite.tex}
+
+from file \verb/quantumcite.tex/ extracts (full) list of bibliography cited.
+ 
+
+%% ------------------------------------------------------------------------------------------
+%
+% ---- Bibliography ----
+%
+%% ------------------------------------------------------------------------------------------
+
+\bibliographystyle{plain} % \bibliographystyle{alpha} 
+
+%% ------------------------------------------------
+%% Step 1:
+%% to create bbl file from bib file include the next line and 
+%% set ``%tm'' instead of ``%bm'' Command line argument for Bibtex in 
+%% Texnicenter: Build -> Define Output Profiles -> LaTeX=>PDF : Comand line args to pass to Bibtex  
+         
+%\bibliography{quantumbib.bib} 
+
+%% ------------------------------------------------
+%% Step 2:
+%% to insert bibliography, insert comment % to previous line 
+%% and input kollareng.bbl (or your ownfile)
+
+\input{kollareng.bbl}
+
+%% ------------------------------------------------
+
+
+\end{document}
+

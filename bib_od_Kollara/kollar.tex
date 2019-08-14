@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper]{article}
+
+%% Begin Slovak Version ---------------------------------------------
+\usepackage[cp1250]{inputenc}
+\usepackage{slovak}
+%% End Slovak Version -----------------------------------------------
+
+%\def\ encodingdefault{IL2} 
+
+
+\title{Quantové výpoèty -- Literatúra, slovenská verzia}
+
+\author{Jáan KOLLÁR}
+
+\begin{document}
+
+Vloženie citácií vo forme \verb/\cite{author}/
+
+\input{quantumcite.tex}
+
+v súbore \verb/quantumcite.tex/ vyberie (úplný) zoznam citovanej literatúry zo súboru \verb/quantumbib.bib/ do zoznamu literatúry, ktorý sa nachádza v súbore .bbl.
+
+Súbor \verb/quantumbib.bib/ musí by aj v tomto prípade v medzinárodnej forme, bez interpunkcií, pre prípad použitia v angl. verzii.
+ 
+
+%% ------------------------------------------------------------------------------------------
+%
+% ---- Bibliography ----
+%
+%% ------------------------------------------------------------------------------------------
+
+\bibliographystyle{plain} % \bibliographystyle{alpha} 
+
+%% ------------------------------------------------
+%% Step 1:
+%% to create bbl file from bib file include the next line and 
+%% set ``%tm'' instead of ``%bm'' Command line argument for Bibtex in 
+%% Texnicenter: Build -> Define Output Profiles -> LaTeX=>PDF : Comand line args to pass to Bibtex  
+         
+%\bibliography{quantumbib.bib} 
+
+%% ------------------------------------------------
+%% Step 2:
+%% to insert bibliography, insert comment % to previous line 
+%% and input kollar.bbl (or your ownfile)
+
+\input{kollar.bbl}
+
+%% ------------------------------------------------
+
+
+\end{document}
+

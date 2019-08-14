@@ -1,0 +1,28 @@
+How to use bibtex from command line
+===================================
+
+1. delete all files except kollar.tex and kollarb.bib
+2. latex kollar.tex (with \bibliography{kollarb} line and \cite{authors} in kollarb.bib. kollar.aux is created
+3. invoke bibtex in wincmd command line (full path is needed) and parameter kollar without extension, i.e.
+
+c:\texlive\2010\bin\win32\bibtex kollar
+
+kollar.bbl is created
+
+4. remove \bibliography{kollarb} in kollar.tex and replace it by input{kollar.bbl}.
+5. latex kollar.tex twice. you obtain kollar.pdf with bibliography.
+
+
+How to use bibtex in texnicenter
+================================
+
+0. replace "%bm" by "%tm" in Texnicenter Build -> Define output profiles - Bibtex command line options
+1. delete all files except kollar.tex and kollarb.bib
+2. latex kollar.tex (with \bibliography{kollarb} line and \cite{authors} in kollarb.bib twice. 
+
+kollar.aux and kollar.bbl is created.
+
+3. replace backward "%tm" by "%bm" in Texnicenter Build -> Define output profiles - Bibtex command line options
+4. remove \bibliography{kollarb} in kollar.tex and replace it by input{kollar.bbl}.
+5. latex kollar.tex twice. you obtain kollar.pdf with bibliography.
+ 
