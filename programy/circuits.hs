@@ -12,10 +12,10 @@ data Element = X
     | Sd
     | T
     | Td
-    | C   -- CNOT target bit
-    | N   -- CNOT control bit
+    | Ct   -- CNOT target bit
+    | Cc  -- CNOT control bit
     | E   -- empty
-    deriving Show
+    deriving (Show, Eq)
 
 type LevelGates = [Element]
 
@@ -58,7 +58,14 @@ processLevel l@(Level g t) st@(StateTree p s subts) = StateTree p s (map (proces
 
 -- Vytvory novy list pre StateTree pouzitim operacii v levely
 calculateStateTrees ::  LevelGates -> States -> Double -> [StateTree]
-calculateStateTrees g s p = (StateTree p (zipWith applyGate g s) []) : [] -- TODO : treba vyriesit CNOT
+calculateStateTrees g s p = 
+    if (Cc `elem` g)
+    then applyCNot g s p
+    else (StateTree p (zipWith applyGate g s) []) : []
+
+-- TODO : treba vyriesit CNOT
+applyCNot ::  LevelGates -> States -> Double -> [StateTree]
+applyCNot g s p = (StateTree (p+0.2) s []) : (StateTree (p+0.3) s []) : []
 
 applyGate :: Element -> QBit -> QBit
 applyGate e q = 
@@ -74,15 +81,16 @@ applyGate e q =
         _ -> q
 
 
-l1, l2, l3 :: Level
+l1, l2, l3, l4 :: Level
 l1 = Level [Y, Z] False
 l2 = Level [H, X] False
-l3 = Level [X, E] False
+l3 = Level [H, E] False
+l4 = Level [Cc, Ct] False
 
 c1, c2, c3 :: Circuit
 c1 = [Level [] True, Level [H, X] False , Level [] True]
 c2 = [Level [H, X] False]
-c3 = [l3]
+c3 = [l3, l4, l3]
 
 st1, st2, st3, st4, st5, st6 :: StateTree
 st1 = StateTree 1 [q0, q0] [st2, st3]
