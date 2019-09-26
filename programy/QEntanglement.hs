@@ -82,7 +82,7 @@ qs0  = [q0, q1, qP, qM, qR, qL]
 -- Mnozina unitarnych operacii
 -- --------------------------------------------------------------- 
 
-us   = [uX, uY, uZ, uI, uH, uS, uSd, uT, uTd] -- POZOR je pridana uI (Identita)
+--us   = [uX, uY, uZ, uI, uH, uS, uSd, uT, uTd] -- POZOR je pridana uI (Identita)
 
 -- --------------------------------------------------------------- 
 

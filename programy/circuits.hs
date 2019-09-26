@@ -1,6 +1,7 @@
 import Data.Complex
 import QDefinitions
 import QOperations
+import QEntanglement
 
 -- ----------------Struktura pre ukladanie qvantovych obvodov
 
@@ -64,9 +65,22 @@ calculateStateTrees g s p =
     else (StateTree p (zipWith applyGate g s) []) : []
 
 -- TODO : treba vyriesit CNOT
+--        treba zmenit p a aplikovat X gate na target bit Ct
 applyCNot ::  LevelGates -> States -> Double -> [StateTree]
 applyCNot g s p = (StateTree (p+0.2) s []) : (StateTree (p+0.3) s []) : []
 
+-- Returns probability of control bits being 1
+cnPasP :: [Element] -> [QBit] -> Double
+cnPasP g s = (foldr (*) 1 (zipWith probCt1 g s))
+
+-- Returns probablitiy of Ct being 1
+-- if e is not Ct returns -1
+probCt1 :: Element -> QBit -> Double
+probCt1 e q
+    | e == Ct = betanorm2 q
+    | otherwise = -1
+
+-- Applies gate to qbit state
 applyGate :: Element -> QBit -> QBit
 applyGate e q = 
     case e of
