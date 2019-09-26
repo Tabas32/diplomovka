@@ -3,7 +3,7 @@ import QDefinitions
 import QOperations
 import QEntanglement
 
--- ----------------Struktura pre ukladanie qvantovych obvodov
+-- ----------------Structure for storing qvantum circuits
 
 data Element = X
     | Y
@@ -27,14 +27,14 @@ data Level = Level LevelGates Bool deriving Show
 
 type Circuit = [Level]
 
--- ----------------Struktura pre ukladanie vysledkov
+-- ----------------Structure for stroing resutls
 
 data R = R QBit Double
 type T = [R]
 type Ts = [T]
 
 
--- ----------------Struktura pre ukladanie stavov
+-- ----------------Structure for storing qbit states
 
 type QBit = [[Complex Double]]
 type States = [QBit]
@@ -52,22 +52,20 @@ processCircuit (l:ls) t = -- TODO : tu bude if t = true tak sprav novy Ts (cize 
     in processCircuit ls newStateTree
 processCircuit [] t = t
 
--- Aplikuje Level na listy StateTree
+-- Applies Level on leafs of StateTree
 processLevel :: Level -> StateTree -> StateTree
 processLevel l@(Level g t) st@(StateTree p s []) = StateTree p s (calculateStateTrees g s p)
 processLevel l@(Level g t) st@(StateTree p s subts) = StateTree p s (map (processLevel l) subts)
 
--- Vytvory novy list pre StateTree pouzitim operacii v levely
+-- Creates new StateTree list, using level operations
 calculateStateTrees ::  LevelGates -> States -> Double -> [StateTree]
 calculateStateTrees g s p = 
     if (Cc `elem` g)
     then applyCNot g s p
     else (StateTree p (zipWith applyGate g s) []) : []
 
--- TODO : treba vyriesit CNOT
---        treba zmenit p a aplikovat X gate na target bit Ct
+-- Function splits StateTree depending on CNOT gate 
 applyCNot ::  LevelGates -> States -> Double -> [StateTree]
---applyCNot g s p = (StateTree (p+0.2) s []) : (StateTree (p+0.3) s []) : []
 applyCNot g s p = 
     let pasP = cnPasP g s p
     in if pasP == 0
