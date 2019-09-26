@@ -67,11 +67,16 @@ calculateStateTrees g s p =
 -- TODO : treba vyriesit CNOT
 --        treba zmenit p a aplikovat X gate na target bit Ct
 applyCNot ::  LevelGates -> States -> Double -> [StateTree]
-applyCNot g s p = (StateTree (p+0.2) s []) : (StateTree (p+0.3) s []) : []
+--applyCNot g s p = (StateTree (p+0.2) s []) : (StateTree (p+0.3) s []) : []
+applyCNot g s p = 
+    let pasP = cnPasP g s p
+    in if pasP == 0
+        then [StateTree p s []]
+        else (StateTree pasP (zipWith applyGate g s) []) : (StateTree (1 - pasP) s []) : []
 
 -- Returns probability of control bits being 1
-cnPasP :: [Element] -> [QBit] -> Double
-cnPasP g s = (foldr (*) 1 (zipWith probCt1 g s))
+cnPasP :: [Element] -> [QBit] -> Double -> Double
+cnPasP g s p = p * (foldr (*) 1 (filter (>=0) (zipWith probCt1 g s)))
 
 -- Returns probablitiy of Ct being 1
 -- if e is not Ct returns -1
@@ -92,13 +97,14 @@ applyGate e q =
         Sd -> uSd |* q
         T -> uT |* q
         Td -> uTd |* q
+        Cc -> uX |* q
         _ -> q
 
 
 l1, l2, l3, l4 :: Level
 l1 = Level [Y, Z] False
 l2 = Level [H, X] False
-l3 = Level [H, E] False
+l3 = Level [E, H] False
 l4 = Level [Cc, Ct] False
 
 c1, c2, c3 :: Circuit
@@ -117,4 +123,4 @@ st4 = StateTree 4 [q0, q0] []
 
 st5 = StateTree 5 [q0, q0] []
 
-st6 = StateTree 6 [q0, q0] []
+st6 = StateTree 1 [q0, q0] []
