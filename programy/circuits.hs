@@ -98,6 +98,19 @@ applyGate e q =
         Cc -> uX |* q
         _ -> q
 
+-- Returns binary of integer number
+toBin :: Int -> [Int]
+toBin 0 = [0]
+toBin n = reverse (toBin' n)
+
+toBin' 0 = []
+toBin' n = (n `mod` 2) : (toBin' (n `div` 2))
+
+-- Add 0 in front of binary n until length equals to len
+formatBin n len
+    | length n == len = n
+    | otherwise = formatBin (0 : n) len
+
 
 l1, l2, l3, l4 :: Level
 l1 = Level [Y, Z] False
