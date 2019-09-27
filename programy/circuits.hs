@@ -29,7 +29,8 @@ type Circuit = [Level]
 
 -- ----------------Structure for stroing resutls
 
-data R = R QBit Double
+data R = R Double [Int]
+    deriving (Show)
 type T = [R]
 type Ts = [T]
 
@@ -107,9 +108,32 @@ toBin' 0 = []
 toBin' n = (n `mod` 2) : (toBin' (n `div` 2))
 
 -- Add 0 in front of binary n until length equals to len
-formatBin n len
+formatBin len n
     | length n == len = n
-    | otherwise = formatBin (0 : n) len
+    | otherwise = formatBin len (0 : n)
+
+-- Creates list of possibles outcomes for length of list of states
+createResList :: Int -> [[Int]]
+createResList len = map (formatBin len) (map toBin [0..((2^len)-1)])
+
+-- Creates list of possible results with calcutated probabilities
+collapseStates :: States -> T
+collapseStates s = map (createRList s) (createResList (length s))
+
+-- Create Result data structure
+createRList :: States -> [Int] -> R
+createRList s bin = R (foldr (*) 1 (calculateProbs s bin)) bin
+
+-- Calculates probabilities for collapsing QBits
+calculateProbs :: States -> [Int] -> [Double]
+calculateProbs s bin = zipWith calcP s bin
+
+-- Calculate probability of QBit being |1> or |0> (q1/q0)
+calcP :: QBit -> Int -> Double
+calcP q b
+    | b == 0 = 1 - betanorm2 q
+    | otherwise = betanorm2 q
+
 
 
 l1, l2, l3, l4 :: Level
