@@ -47,11 +47,36 @@ type SubTrees = [StateTree]
 --     SubTrees : possible states of QBits down the circuit
 data StateTree = StateTree Double States SubTrees deriving Show
 
+-- Result Table structure
+data RT = RT StateTree Ts
+    deriving (Show)
+
+processCircuit :: Circuit -> RT -> RT 
+processCircuit (l:ls) (RT st t) =
+    let newStT = processLevel l st
+    in if isLMeasured l
+        then processCircuit ls (RT newStT (upTs t newStT))
+        else processCircuit ls (RT newStT t)
+processCircuit [] rt = rt
+
+upTs :: Ts -> StateTree -> Ts
+upTs t st = (collapseR st) : t
+
+collapseR :: StateTree -> T
+collapseR (StateTree p s []) = collapseStates s
+collapseR (StateTree p s subTs) = foldr (++) [] (map collapseR subTs)
+
+-- Returns True if level should be measured
+isLMeasured :: Level -> Bool
+isLMeasured (Level _ m) = m
+
+{-
 processCircuit :: Circuit -> StateTree -> StateTree 
 processCircuit (l:ls) t = -- TODO : tu bude if t = true tak sprav novy Ts (cize vysledky)
     let newStateTree = processLevel l t
     in processCircuit ls newStateTree
 processCircuit [] t = t
+-}
 
 -- Applies Level on leafs of StateTree
 processLevel :: Level -> StateTree -> StateTree
@@ -77,11 +102,11 @@ applyCNot g s p =
 cnPasP :: [Element] -> [QBit] -> Double -> Double
 cnPasP g s p = p * (foldr (*) 1 (filter (>=0) (zipWith probCt1 g s)))
 
--- Returns probablitiy of Ct being 1
+-- Returns probablitiy of Cc being 1
 -- if e is not Ct returns -1
 probCt1 :: Element -> QBit -> Double
 probCt1 e q
-    | e == Ct = betanorm2 q
+    | e == Cc = betanorm2 q
     | otherwise = -1
 
 -- Applies gate to qbit state
@@ -96,7 +121,7 @@ applyGate e q =
         Sd -> uSd |* q
         T -> uT |* q
         Td -> uTd |* q
-        Cc -> uX |* q
+        Ct -> uX |* q
         _ -> q
 
 -- Returns binary of integer number
@@ -139,8 +164,8 @@ calcP q b
 l1, l2, l3, l4 :: Level
 l1 = Level [Y, Z] False
 l2 = Level [H, X] False
-l3 = Level [E, H] False
-l4 = Level [Cc, Ct] False
+l3 = Level [E, H] True
+l4 = Level [Ct, Cc] False
 
 c1, c2, c3 :: Circuit
 c1 = [Level [] True, Level [H, X] False , Level [] True]
