@@ -48,6 +48,7 @@ type SubTrees = [StateTree]
 data StateTree = StateTree Double States SubTrees deriving Show
 
 -- Result Table structure
+-- Ts -> list of results from end to start
 data RT = RT StateTree Ts
     deriving (Show)
 
@@ -63,7 +64,7 @@ upTs :: Ts -> StateTree -> Ts
 upTs t st = (collapseR st) : t
 
 collapseR :: StateTree -> T
-collapseR (StateTree p s []) = collapseStates s
+collapseR (StateTree p s []) = map (mulR p) (filter isRgt0 (collapseStates s))
 collapseR (StateTree p s subTs) = foldr (++) [] (map collapseR subTs)
 
 -- Returns True if level should be measured
@@ -159,13 +160,20 @@ calcP q b
     | b == 0 = 1 - betanorm2 q
     | otherwise = betanorm2 q
 
+-- Returns True if probablity of R (result) is greater than 0
+isRgt0 :: R -> Bool
+isRgt0 (R p _) = p > 0
+
+-- Function for multiplying probability in R
+mulR :: Double -> R -> R
+mulR treeP (R p bit) = R (treeP * p) bit  
 
 
 l1, l2, l3, l4 :: Level
 l1 = Level [Y, Z] False
 l2 = Level [H, X] False
 l3 = Level [E, H] True
-l4 = Level [Ct, Cc] False
+l4 = Level [Ct, Cc] True
 
 c1, c2, c3 :: Circuit
 c1 = [Level [] True, Level [H, X] False , Level [] True]
