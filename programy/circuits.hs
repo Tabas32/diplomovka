@@ -169,26 +169,22 @@ mulR :: Double -> R -> R
 mulR treeP (R p bit) = R (treeP * p) bit  
 
 
-l1, l2, l3, l4 :: Level
+l1, l2, l3, l4, l5, l6, l7 :: Level
 l1 = Level [Y, Z] False
 l2 = Level [H, X] False
 l3 = Level [E, H] True
 l4 = Level [Ct, Cc] True
+l5 = Level [H, H, E] False
+l6 = Level [Cc, Cc, Ct] True
+l7 = Level [H, H, E] True
 
-c1, c2, c3 :: Circuit
+c1, c2, c3, c4 :: Circuit
 c1 = [Level [] True, Level [H, X] False , Level [] True]
 c2 = [Level [H, X] False]
 c3 = [l3, l4, l3]
+c4 = [l5, l6, l7]
 
-st1, st2, st3, st4, st5, st6 :: StateTree
-st1 = StateTree 1 [q0, q0] [st2, st3]
+st :: StateTree
+st = StateTree 1 [q0, q0, q0] []
 
-st2 = StateTree 2 [q0, q0] [st4, st5]
-
-st3 = StateTree 3 [q0, q0] [st6]
-
-st4 = StateTree 4 [q0, q0] []
-
-st5 = StateTree 5 [q0, q0] []
-
-st6 = StateTree 1 [q0, q0] []
+rt = RT st []
