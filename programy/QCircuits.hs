@@ -1,3 +1,5 @@
+module QCircuits where 
+
 import Data.Complex
 import QDefinitions
 import QOperations
@@ -167,7 +169,6 @@ isRgt0 (R p _) = p > 0
 -- Function for multiplying probability in R
 mulR :: Double -> R -> R
 mulR treeP (R p bit) = R (treeP * p) bit  
-
 
 l1, l2, l3, l4, l5, l6, l7 :: Level
 l1 = Level [Y, Z] False
