@@ -29,7 +29,7 @@ data Level = Level LevelGates Bool deriving Show
 
 type Circuit = [Level]
 
--- ----------------Structure for stroing resutls
+-- ----------------Structure for storing resutls
 
 data R = R Double [Int]
     deriving (Show)

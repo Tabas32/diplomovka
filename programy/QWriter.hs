@@ -5,10 +5,12 @@ import Data.List
 
 
 main = do
-    let l1 = Level [H, E, E] True
-        l2 = Level [Cc, Ct, E] True
-        l3 = Level [H, H, Y] True
-        c = [l1, l2, l3]
+    let l1 = Level [H, E, E ] False
+        l2 = Level [Cc, Ct, E] False
+        l3 = Level [E, H, E] False
+        l4 = Level [Cc, Cc, Ct] False
+        l5 = Level [H, E, E] True
+        c = [l1, l2, l3, l4, l5]
         st = StateTree 1 [q0, q0, q0] []
         rt = RT st []
     putStrLn "What should be the name of output file:"
@@ -55,7 +57,7 @@ makeTEXTree (StateTree p s st) =
         "node[text width=6cm]{ \\textbf{"
         ++ (show p) ++ ":: }" 
         ++ (showStates s) 
-        ++ " } [level distance=2cm]"
+        ++ " } [level distance=3cm]"
         ++ (foldr (++) "" (map wrapAsChild (map makeTEXTree st)))
 
 wrapAsChild :: String -> String
