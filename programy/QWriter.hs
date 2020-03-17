@@ -5,7 +5,7 @@ import Data.List
 
 
 main = do
-    let l1 = Level [H, E, E ] False
+{-    let l1 = Level [H, E, E ] False
         l2 = Level [Cc, Ct, E] False
         l3 = Level [E, H, E] False
         l4 = Level [Cc, Cc, Ct] False
@@ -13,6 +13,20 @@ main = do
         c = [l1, l2, l3, l4, l5]
         st = StateTree 1 [q0, q0, q0] []
         rt = RT st []
+-}
+{- EXPERIMENT 1-}
+    let l1 = Level [H, E] True
+        l2 = Level [Cc, Ct] True
+        l3 = Level [Ct, Cc] True
+        c = [l1, l2, l3]
+        st = StateTree 1 [q0, q0] []
+        rt = RT st []
+{-
+    let l1 = Level [Cc, Ct] True
+        c = [l1]
+        st = StateTree 1 [q1, qP] []
+        rt = RT st []
+-}
     putStrLn "What should be the name of output file:"
     output <- getLine
     let oFilePath = output ++ ".tex"

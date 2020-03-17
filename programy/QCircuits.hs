@@ -96,14 +96,14 @@ calculateStateTrees g s p =
 -- Function splits StateTree depending on CNOT gate 
 applyCNot ::  LevelGates -> States -> Double -> [StateTree]
 applyCNot g s p = 
-    let pasP = cnPasP g s p
+    let pasP = cnPasP g s
     in if pasP == 0
         then [StateTree p s []]
-        else (StateTree pasP (zipWith applyGate g s) []) : (StateTree (1 - pasP) s []) : []
+        else (StateTree (p * pasP) (zipWith applyGate g s) []) : (StateTree (p * (1 - pasP)) s []) : []
 
 -- Returns probability of control bits being 1
-cnPasP :: [Element] -> [QBit] -> Double -> Double
-cnPasP g s p = p * (foldr (*) 1 (filter (>=0) (zipWith probCt1 g s)))
+cnPasP :: [Element] -> [QBit] -> Double
+cnPasP g s = (foldr (*) 1 (filter (>=0) (zipWith probCt1 g s)))
 
 -- Returns probablitiy of Cc being 1
 -- if e is not Ct returns -1
